@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motores de plantillas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
+</head>
+<body>
+   <div class="jumbotron container mt-3">
+   
+    <br>
+<h3 class="text-primary">Listado de productos</h3>
+<br>
+<% if (productos.length > 0) { %>
+    
+    <div class="table-responsive">
+        <table class="table table-dark">
+            <tr class="text-primary">
+                <th>nombre</th>
+                <th>descripcion</th>
+                <th>precio</th>
+                <th>imagen</th>
+            </tr>
+            <% productos.forEach(producto =>{ %>
+                <tr>
+                    <td><%= producto.nombre %></td>
+                    <td><%= producto.descripcion%></td>
+                    <td><%= producto.precio %></td>
+                    <td> <img style="width:100px; height:auto;" src=" <%= producto.imagen %> " alt="imagen del producto"></td>
+                </tr>
+            <%  }) %>
+        </table>
+    </div>
+<% } else { %>
+    <h3 class="alert alert-danger">no se encontraron datos</h3>
+<% } %>
+
+<button class="btn btn-dark"> <a class="text-white"href="/ejs">ira ingreso de productos</a></button>
+
+   </div> 
+</body>
+</html>
+
+
