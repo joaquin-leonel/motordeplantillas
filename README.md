@@ -1,7 +1,7 @@
 # Motores de Plantillas
 
-Justificacion de cual motor de plantilla prefiero:
-Ejs: es el motor de plantilla que use para este desafio y me siento muy comodo usandolo, si bien para la mayoria el hecho de tener que poner "<% %>" en una y cada una de las lineas que se deba usar codigo de Javasctipt puede resultar algo tedioso y aveces hata confuso, para mi paso no fue tan "traumatico" y siento que no pierdo la escencia de como trabajo con lo que es HTML convencional.
+Justificación de cual motor de plantilla prefiero:
+Ejs: Es el motor de plantilla que use para este desafío y me siento muy cómodo usándolo, si bien para la mayoría el hecho de tener que poner "<% %>" en una y cada una de las lineas que se deba usar código de Javasctipt puede resultar algo tedioso y a veces hasta confuso, para mi paso no fue tan "traumático" y siento que no pierdo la esencia de como trabajo con lo que es HTML convencional.
 ```
 correr el proyecto
 ```
