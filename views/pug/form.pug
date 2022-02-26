@@ -1,0 +1,21 @@
+h3.text-primary Ingrese Producto
+br
+br
+form(action='/ejs/productos' method='POST')
+  .form-group
+    label(for='nombre') Nombre
+    input#nombre.form-control(type='text' name='nombre')
+  .form-group
+    label(for='descripcion') descripcion
+    input#descripcion.form-control(type='text' name='descripcion')
+  .form-group
+    label(for='precio') precio
+    input#precio.form-control(type='number' name='precio')
+  .form-group
+    label(for='imagen') URL de imagen
+    input#imagen.form-control(type='text' name='imagen')
+  input.btn.btn-success(type='submit' value='Enviar')
+br
+br
+button.btn.btn-dark
+  a.text-white(href='/ejs/productos') ir a listado de productos
